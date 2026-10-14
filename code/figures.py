@@ -123,19 +123,21 @@ def fig_phase():
     ax.text(4e-4, 900, "human-like\nbetter", color="white", fontsize=7)
 
     # (b) instances N vs drift at fixed staleness
+    Lam_b, tau_b = 45, 10
+    abar_b = Lam_b + (tau_b + 1) / 2  # mean staleness, = 50.5
     Ns = np.unique(np.round(np.logspace(0, 7, 120)).astype(int))
-    Z2 = np.array([lineage_vs_individual(Q, dict(base, N=int(n), Lam=45, tau=10)) for n in Ns])
+    Z2 = np.array([lineage_vs_individual(Q, dict(base, N=int(n), Lam=Lam_b, tau=tau_b)) for n in Ns])
     ax = axes[1]
     ax.pcolormesh(Q / sig2, Ns, Z2, cmap=cmap, vmin=-vmax, vmax=vmax, shading="auto", rasterized=True)
     ax.contour(Q / sig2, Ns, Z2, levels=[0], colors=INK, linewidths=1.0)
-    apx2 = np.array([crossover_approx(dict(base, N=int(n), Lam=45, tau=10)) / sig2 for n in Ns])
+    apx2 = np.array([crossover_approx(dict(base, N=int(n), Lam=Lam_b, tau=tau_b)) / sig2 for n in Ns])
     ok = Ns * base["rhoL"] > base["rho"]
     ax.plot(apx2[ok], Ns[ok], color="white", lw=1.0, ls=(0, (3, 2)))
-    lim = base["s2"] / 1.0  # asymptote sigma^2/(rho (abar-1)^2) in units of sigma^2
-    ax.axvline(1 / (base["rho"] * (50.5 - 1) ** 2), color=INK2, lw=0.6, ls=":")
+    # large-N asymptote sigma^2/(rho (abar-1)^2), in units of sigma^2
+    ax.axvline(1 / (base["rho"] * (abar_b - 1) ** 2), color=INK2, lw=0.6, ls=":")
     ax.set_xscale("log"); ax.set_yscale("log")
     ax.set_xlabel(r"$Q/\sigma^2$"); ax.set_ylabel(r"instances pooled $N$")
-    ax.set_title(r"(b) experience vs. drift  ($\bar a=50.5$)", loc="left")
+    ax.set_title(r"(b) experience vs. drift  ($\bar a=%g$)" % abar_b, loc="left")
     cb = fig.colorbar(m, ax=axes, shrink=0.95, pad=0.01)
     cb.set_label(r"$\log_{10}$ regret ratio  LLM-like / human-like", fontsize=7)
     cb.outline.set_visible(False)

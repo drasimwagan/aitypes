@@ -28,7 +28,7 @@ paper/figures/    Figures 1-3 (PDF) and numerical_check.json
 code/model.py     closed-form results (Props. 1-2, Eq. 7) and the Monte Carlo simulator
 code/figures.py   regenerates Figures 1-3 and the analytic-vs-Monte-Carlo table
 code/sweep_check.py  randomised check of Theorem 1, Proposition 3 and the Q* approximation
-code/check_long.py   long Monte Carlo runs for the lineage agents
+code/check_long.py   long Monte Carlo runs for the lineage agents (N=10, three seeds)
 ```
 
 ## Reproducing
@@ -41,6 +41,8 @@ make figures   # ~90 s: regenerates paper/figures/*.pdf and numerical_check.json
 make paper     # builds paper/main.pdf
 make check     # randomised verification of the theorems (400 parameter settings)
 ```
+
+The Makefile calls `python3`; where the interpreter is `python` (e.g. Windows), use `make PYTHON=python figures`.
 
 Random seeds: 7 (Figure 2 regret curves), 11 (analytic vs. Monte Carlo table), 21–23 (long runs), 0 (randomised check).
 
