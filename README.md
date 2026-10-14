@@ -2,11 +2,11 @@
 
 **Adaptation Spectra, Consolidation, and the Partial Order of Minds**
 
-Asim Imdad Wagan · aiwagan@gmail.com · working draft v0.2 (October 2026)
+Asim Imdad Wagan · dr.asim@aksiq.com · working draft v0.2 (October 2026)
 
 Paper: [`paper/main.pdf`](paper/main.pdf)
 
-> **Status: working draft (v0.2), circulated for comment.** Results and text may change. Comments and criticism are very welcome at aiwagan@gmail.com; please contact the author before citing.
+> **Status: working draft (v0.2), circulated for comment.** Results and text may change. Comments and criticism are very welcome at dr.asim@aksiq.com; please contact the author before citing.
 
 ## Summary
 

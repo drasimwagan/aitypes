@@ -8,7 +8,7 @@ repository-code: "https://github.com/drasimwagan/aitypes"
 authors:
   - family-names: Wagan
     given-names: Asim Imdad
-    email: aiwagan@gmail.com
+    email: dr.asim@aksiq.com
     affiliation: AKS iQ
 preferred-citation:
   type: unpublished
@@ -16,7 +16,7 @@ preferred-citation:
   authors:
     - family-names: Wagan
       given-names: Asim Imdad
-      email: aiwagan@gmail.com
+      email: dr.asim@aksiq.com
       affiliation: AKS iQ
   year: 2026
   notes: "Working draft v0.2"
