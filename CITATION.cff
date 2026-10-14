@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Types of Intelligence: Adaptation Spectra, Consolidation, and the Partial Order of Minds"
+type: software
+version: "0.2"
+date-released: "2026-10-13"
+repository-code: "https://github.com/drasimwagan/aitypes"
+authors:
+  - family-names: Wagan
+    given-names: Asim Imdad
+    email: aiwagan@gmail.com
+    affiliation: AKS iQ
+preferred-citation:
+  type: unpublished
+  title: "Types of Intelligence: Adaptation Spectra, Consolidation, and the Partial Order of Minds"
+  authors:
+    - family-names: Wagan
+      given-names: Asim Imdad
+      email: aiwagan@gmail.com
+      affiliation: AKS iQ
+  year: 2026
+  notes: "Working draft v0.2"
+  url: "https://github.com/drasimwagan/aitypes"
