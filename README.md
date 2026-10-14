@@ -6,6 +6,8 @@ Asim Imdad Wagan · aiwagan@gmail.com · working draft v0.2 (October 2026)
 
 Paper: [`paper/main.pdf`](paper/main.pdf)
 
+> **Status: working draft (v0.2), circulated for comment.** Results and text may change. Comments and criticism are very welcome at aiwagan@gmail.com; please contact the author before citing.
+
 ## Summary
 
 Debates about whether AI is "smarter" than humans assume intelligence is a single number. This paper argues it is not. Any adaptive system — a bacterium, an ant colony, a human, a language model — is described by a **profile**: what it can learn at each timescale, how much of what it learns quickly survives into slow memory (*consolidation*), how many bodies share one memory (*instance topology*), how far its goals reach, and how strongly it acts on its world.
